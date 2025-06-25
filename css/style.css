@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #687d77;
+}
+
+.skip-link {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: #000;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+nav {
+    background-color: #64989e;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.heroImage {
+    width: 10%;
+    height: auto;
+    align-self: center;
+}
+
+.headerContent {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+main {
+    background-color: #8ea392;
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main a {
+    color: #002244;
+}
+footer {
+    background-color: #4d574f;
+}
+footer p {
+    color: #FFD700;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+p {
+    line-height: 25px;
+}
+
+.imageGallery {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.imageGallery img {
+    width: 100%;
+    height: auto;
+}
